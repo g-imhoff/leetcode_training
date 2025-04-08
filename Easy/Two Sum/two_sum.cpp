@@ -1,9 +1,11 @@
+#include <unordered_map>
 #include <vector>
 
 class Solution {
 public:
-  unordered_map<int, int> hashmap;
-  vector<int> twoSum(vector<int> &nums, int target) {
+  std::unordered_map<int, int> hashmap;
+
+  std::vector<int> twoSum(std::vector<int> &nums, int target) {
     std::vector<int> result;
     int length = nums.size();
     int comp;
